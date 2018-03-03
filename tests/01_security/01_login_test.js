@@ -1,6 +1,6 @@
 /// <reference path="../../steps.d.ts" />
 
-Feature('Login');
+Feature('Login @current');
 
 Scenario('???', (I, Security) => {
     I.amOnPage('/wp-login.php');

@@ -10,7 +10,7 @@
   "scripts": {
     "cjs": "codeceptjs",
     "test": "codeceptjs run --steps --debug",
-    "test:current": "SELENIUM_PORT=4444 codeceptjs run --steps --debug --grep 'Client products configuration'",
+    "test:current": "SELENIUM_PORT=4444 codeceptjs run --steps --debug --grep @current",
     "test:selenium-standalone": "SELENIUM_PORT=4444 codeceptjs run --steps --debug",
     "test:debug": "SELENIUM_PORT=4444 node --inspect-brk=51413 ./node_modules/.bin/codeceptjs run",
     "test:docker": "SELENIUM_HOST=selenium docker-compose run codeceptjs",
