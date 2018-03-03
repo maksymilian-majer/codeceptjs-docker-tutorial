@@ -18,7 +18,7 @@
     "selenium:install": "selenium-standalone install",
     "selenium:start": "selenium-standalone start"
   },
-  "author": "Katarzyna Ulok",
+  "author": "Maksymilian Majer",
   "license": "ISC",
   "devDependencies": {
     "codeceptjs": "^1.1.6",
