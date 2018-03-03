@@ -19,7 +19,7 @@
     "selenium:start": "selenium-standalone start"
   },
   "author": "Maksymilian Majer",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "codeceptjs": "^1.1.6",
     "codeceptjs-webdriverio": "^1.1.0",
