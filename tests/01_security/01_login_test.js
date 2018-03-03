@@ -2,7 +2,7 @@
 
 Feature('Login @current');
 
-Scenario('???', (I, Security) => {
+Scenario('Login page has Username and Password labels', (I, Security) => {
     I.amOnPage('/wp-login.php');
     I.see('Username or Email Address');
     I.see('Password');
