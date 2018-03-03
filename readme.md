@@ -161,7 +161,7 @@ npm run cjs list # lists all available test actions
 
 ### Useful resources
 
-https://docs.docker.com/compose/wordpress/
-https://docs.docker.com/samples/library/wordpress/
-https://gist.github.com/spalladino/6d981f7b33f6e0afe6bb
-https://joshmobley.net/writing/2017/04/09/easy-wordpress-migration-with-docker.html
+* https://docs.docker.com/compose/wordpress/
+* https://docs.docker.com/samples/library/wordpress/
+* https://gist.github.com/spalladino/6d981f7b33f6e0afe6bb
+* https://joshmobley.net/writing/2017/04/09/easy-wordpress-migration-with-docker.html

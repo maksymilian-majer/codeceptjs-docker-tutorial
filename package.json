@@ -3,6 +3,10 @@
   "version": "0.0.1",
   "description": "End to end tests for WordPress using CodeceptJS",
   "main": "index.js",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/maksymilian-majer/codeceptjs-docker-tutorial.git"
+  },
   "scripts": {
     "cjs": "codeceptjs",
     "test": "codeceptjs run --steps --debug",
