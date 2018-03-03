@@ -1,0 +1,43 @@
+version: '3.3'
+
+services:
+  chrome:
+    image: selenium/standalone-chrome
+    ports:
+      - '4445:4444'
+      - '5901:5900'
+    networks:
+      default:
+        aliases:
+          - selenium
+
+  db:
+    image: mysql:5.7
+    volumes:
+      - dbdata:/var/lib/mysql
+      - .:/code
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: somepsw
+      MYSQL_DATABASE: wordpress
+      MYSQL_USER: wordpress
+      MYSQL_PASSWORD: wordpress
+
+  wordpress:
+    depends_on:
+      - db
+    image: wordpress:latest
+    ports:
+      - "80:80"
+    restart: always
+    environment:
+      WORDPRESS_DB_HOST: db:3306
+      WORDPRESS_DB_USER: wordpress
+      WORDPRESS_DB_PASSWORD: wordpress
+    networks:
+      default:
+        aliases:
+          - wptests
+
+volumes:
+  dbdata:
