@@ -1,6 +1,6 @@
 /// <reference path="../../steps.d.ts" />
 
-Feature('Login @current');
+Feature('Login');
 
 Scenario('Login page has Username and Password labels', (I) => {
     I.amOnPage('/wp-login.php');
@@ -18,14 +18,12 @@ Scenario('Password field is required', (I) => {
 
 
 Scenario('Invalid username or password', (I, Security) => {
-    I.amOnPage('/wp-login.php');
     Security.loginWith('maks', 'some wrong password');
     I.see('ERROR: Invalid username. Lost your password?');
 });
 
 
 Scenario('Login with correct credentials', (I, Security) => {
-    I.amOnPage('/wp-login.php');
     Security.loginAsAdmin();
     I.seeInCurrentUrl('/wp-admin/');
     I.see('Welcome to WordPress!');
