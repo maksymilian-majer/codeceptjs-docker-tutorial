@@ -1,3 +1,5 @@
+[![Build Status](https://semaphoreci.com/api/v1/maksymilian-majer/codeceptjs-docker-tutorial/branches/master/shields_badge.svg)](https://semaphoreci.com/maksymilian-majer/codeceptjs-docker-tutorial)
+
 # Project Description
 
 This is a demonstration project to accompany the tutorial on how to use CodeceptJS with Chrome running with Selenium using Docker Compose.
