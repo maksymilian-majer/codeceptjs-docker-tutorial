@@ -6,8 +6,8 @@ module.exports = {
     windowSize: "maximize",
     waitForTimeout: 10000,
     smartWait: 10000,
-    keepCookies: true,
-    keepBrowserState: true,
+    // keepCookies: true,
+    // keepBrowserState: true,
     port: 4445,
     timeouts: {
         "script": 60000,
