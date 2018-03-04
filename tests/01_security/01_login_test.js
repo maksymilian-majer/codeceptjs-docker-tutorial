@@ -17,22 +17,14 @@ Scenario('Password field is required', (I, Security) => {
 });
 
 
-Scenario('Password field is required', (I, Security) => {
+Scenario('Invalid username or password', (I, Security) => {
     I.amOnPage('/wp-login.php');
     I.fillField('Username or Email Address', 'maks');
-    I.fillField('Password', 'secureP@ssw0rd1');
+    I.fillField('Password', 'some wrong psw');
     I.click('Log In');
     I.see('ERROR: Invalid username. Lost your password?');
 });
 
-
-Scenario('Password field is required', (I, Security) => {
-    I.amOnPage('/wp-login.php');
-    I.fillField('Username or Email Address', 'maks');
-    I.fillField('Password', 'secureP@ssw0rd1');
-    I.click('Log In');
-    I.see('ERROR: Invalid username. Lost your password?');
-});
 
 Scenario('Login with correct credentials', (I, Security) => {
     I.amOnPage('/wp-login.php');
