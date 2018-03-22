@@ -4,8 +4,8 @@
   "description": "End to end tests for WordPress using CodeceptJS",
   "main": "index.js",
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/maksymilian-majer/codeceptjs-docker-tutorial.git"
+    "type": "git",
+    "url": "https://github.com/maksymilian-majer/codeceptjs-docker-tutorial.git"
   },
   "scripts": {
     "cjs": "codeceptjs",
@@ -21,9 +21,9 @@
   "author": "Maksymilian Majer",
   "license": "MIT",
   "devDependencies": {
-    "codeceptjs": "^1.1.6",
+    "codeceptjs": "1.1.7",
     "codeceptjs-webdriverio": "^1.1.0",
-    "selenium-standalone": "*"
+    "selenium-standalone": "6.13.0"
   },
   "dependencies": {}
 }
